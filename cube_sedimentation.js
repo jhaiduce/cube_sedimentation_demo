@@ -79,6 +79,8 @@ function load_cb(data_id, success) {
 
     // place your code here
 
+    help_button=document.getElementById('help_button')
+    help_button.style.display='block'
     info_button=document.getElementById('info_button')
     info_button.style.display='block'
     info_button.onclick = function() {
@@ -89,6 +91,16 @@ function load_cb(data_id, success) {
 	else
 	{
 	    info_container.style.display = 'none';
+	}
+    };
+    help_button.onclick = function() {
+	help_container=document.getElementById('help_container')
+	if(help_container.style.display!='block'){
+	    help_container.style.display = 'block';
+	}
+	else
+	{
+	    help_container.style.display = 'none';
 	}
     };
 }

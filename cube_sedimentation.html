@@ -116,11 +116,26 @@
 
 </head>
 
-<div id="info_button">i</div>
+<div class="round_button" id="info_button">i</div>
+<div class="round_button" id="help_button">?</div>
+<div id="help_container">
+  <div id="move_pan_instructions">
+    <h2>Camera controls:</h2>
+    <ul>
+      <li>Left mouse drag: Orbit</li>
+      <li>Right mouse drag: Pan</li>
+      <li>Mouse wheel: in/out</li>
+      <li>W,A,S,D or arrow keys: Orbit, in/out</li>
+      <li>Pinch: in/out</li>
+    </ul>
+  </div>
+</div>
 <div id="info_container">
-  <h2>Cube Sedimentation</h2>
+  <h2>Particles tumbling in a viscous fluid</h2>
 
-  <p>Rigid spherical bodies falling in a viscous fluid. Color of spherical surface indicates stress (yellow is higher, green is lower, dark green is lowest).</p>
+  <p>Simulation of spherical rigid particle dynamics in viscous fluid. Stokes equations for the fluid are solved using boundary integral equations. Applications include biophysical simulation, microscopic swimming, porous media flows, smart material design and microfluidic devices. </p>
+
+  <p>Visualization is rendered in real time using WebGL, enabling user interaction and portability across a variety of platforms including all major browsers and many mobile devices. Spheres are textured to make their rotation visible and colored according to the magnitude of forces applied by the fluid.</p>
 
   <p>Visualization by John Haiducek, Climate and Space Sciences and Engineering</p>
   <p>Simulation by Eduardo Corona, Department of Mathematics</p>
