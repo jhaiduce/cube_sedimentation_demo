@@ -1,0 +1,28 @@
+[info]
+author = John Haiducek
+icon = 
+name = cube_sedimentation
+title = Cube sedimentation
+
+[paths]
+assets_dirs = projects/cube_sedimentation/assets;
+blend_dirs = projects/cube_sedimentation/blender;
+blender_exec = /home/jhaiduce/Downloads/blender-2.78c-linux-glibc219-x86_64/blender
+build_dir = projects/cube_sedimentation/build
+deploy_dir = 
+
+[compile]
+apps = 
+css_ignore = 
+engine_type = copy
+ignore = 
+js_ignore = 
+optimization = simple
+use_physics = True
+
+[deploy]
+assets_path_dest = assets
+assets_path_prefix = assets
+ignore = 
+override = 
+
