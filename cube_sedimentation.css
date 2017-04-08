@@ -50,6 +50,20 @@ body {
     display:none;
 }
 
+#showhelp_label{
+    position:fixed;
+    bottom:90px;
+    left:30px;
+    z-index:1;
+}
+
+#showinfo_label{
+    position:fixed;
+    bottom:30px;
+    right:90px;
+    z-index:1;
+}
+
 #help_container{
     position: fixed;
     top: 20px;

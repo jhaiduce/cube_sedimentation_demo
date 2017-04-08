@@ -111,7 +111,7 @@
 <script type="text/javascript" src="../../src/addons/screenshooter.js"></script>
 <script type="text/javascript" src="../../src/addons/storage.js"></script>
 <script type="text/javascript" src="../../src/addons/ns_compat.js"></script>
-
+<script type="text/javascript" src="jquery-3.2.0.min.js"></script>
 <script type="text/javascript" src="cube_sedimentation.js"></script>
 
 </head>
@@ -129,11 +129,13 @@
       <li>Pinch: in/out</li>
     </ul>
   </div>
+  <img id="showhelp_label" src="showhelp.png"/>
+  <img id="showinfo_label" src="showinfo.png"/>
 </div>
 <div id="info_container">
   <h2>Particles tumbling in a viscous fluid</h2>
 
-  <p>Simulation of spherical rigid particle dynamics in viscous fluid using the fast multipole method. Stokes equations for the fluid are solved using boundary integral equations. Applications include biophysical simulation, microscopic swimming, porous media flows, smart material design and microfluidic devices. </p>
+  <p>Simulation of spherical rigid particles falling in a viscous fluid. Stokes equations for the fluid are solved using boundary integral equations. Applications include biophysical simulation, microscopic swimming, porous media flows, smart material design and microfluidic devices. </p>
 
   <p>Visualization is rendered in real time using WebGL, enabling user interaction and portability across a variety of platforms including all major browsers and many mobile devices. Spheres are textured to make their rotation visible and colored according to the magnitude of forces applied by the fluid.</p>
 

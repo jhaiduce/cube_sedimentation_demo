@@ -68,7 +68,9 @@ function preloader_cb(percentage) {
 /**
  * callback executed when the scene data is loaded
  */
-function load_cb(data_id, success) {
+    function load_cb(data_id, success) {
+
+	$("#info_button").fadeOut();
 
     if (!success) {
         console.log("b4w load failure");
@@ -77,30 +79,31 @@ function load_cb(data_id, success) {
 
     m_app.enable_camera_controls();
 
-    // place your code here
+	// place your code here
 
-    help_button=document.getElementById('help_button')
-    help_button.style.display='block'
-    info_button=document.getElementById('info_button')
-    info_button.style.display='block'
+	$("#help_container").show()
+	$("#info_container").show()
+	$("#help_button").show()
+	$("#info_button").show()
+
     info_button.onclick = function() {
 	info_container=document.getElementById('info_container')
 	if(info_container.style.display!='block'){
-	    info_container.style.display = 'block';
+	    $("#info_container").fadeIn()
 	}
 	else
 	{
-	    info_container.style.display = 'none';
+	    $("#info_container").fadeOut()
 	}
     };
     help_button.onclick = function() {
 	help_container=document.getElementById('help_container')
 	if(help_container.style.display!='block'){
-	    help_container.style.display = 'block';
+	    $("#help_container").fadeIn()
 	}
 	else
 	{
-	    help_container.style.display = 'none';
+	    $("#help_container").fadeOut()
 	}
     };
 }
