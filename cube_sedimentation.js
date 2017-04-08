@@ -82,9 +82,11 @@ function preloader_cb(percentage) {
 	// place your code here
 
 	$("#help_container").show()
-	$("#info_container").show()
 	$("#help_button").show()
 	$("#info_button").show()
+	
+	if($(window).width()>644 && $(window).height()>576)
+	    $("#info_container").show();
 
     info_button.onclick = function() {
 	info_container=document.getElementById('info_container')
